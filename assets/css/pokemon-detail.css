@@ -1,10 +1,10 @@
 .content {
     background-color: #49d0b0;
     color: #fff;
-    padding: 0;    
+    padding: 0;
 }
 
-.base {
+#base {
     padding: 1rem;
     text-transform: capitalize;
     padding-bottom: 0;
@@ -53,7 +53,7 @@
     padding: 0.25rem 1rem;
     border-radius: 1rem;
     filter: brightness(1.1);
-    background-color: #49d0b0;
+    /* background-color: #49d0b0; */
     font-size: 0.9rem;
     font-weight: 300;
 }
