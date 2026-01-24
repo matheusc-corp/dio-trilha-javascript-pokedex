@@ -3,7 +3,5 @@ class PokemonDetails {
     height;
     weight;
     abilities = [];
-    gender;
     eggGroups = [];
-    eggCycle;
 }

@@ -43,3 +43,15 @@ pokeApi.getPokemonInformations = (offset) => {
         .then(response => response.json())
         .then(json => json);
 }
+
+pokeApi.getPokemonSpeciesInformations = (url) => {
+    // debugger
+    return fetch(url)
+        .then(response => response.json())
+        .then(json => {
+            let eggGroups = json.egg_groups.map(group => group.name)
+            let species = json.genera.find(x => x.language.name === "en").genus
+
+            return {eggGroups, species}
+        })
+}
